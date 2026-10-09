@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>إتقان | منظومة الحافظ للمراجعة والتثبيت</title>
+<meta name="description" content="منظومة عربية لتنظيم مراجعة القرآن الكريم للحافظ والمتعلم مع لوحات متابعة للأهل والمعلم والإدارة" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/dashboards.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>" />
+</head>
+<body>
+<div id="bg-ornament" aria-hidden="true"></div>
+
+<header class="app-header" id="appHeader">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">۞</div>
+      <div class="brand-text">
+        <strong>إتقان</strong>
+        <span>منظومة الحافظ للمراجعة</span>
+      </div>
+    </div>
+    <div class="header-actions">
+      <div class="streak-pill" id="streakPill" title="أيام المواظبة">
+        <span class="flame">🔥</span>
+        <b id="streakCount">0</b>
+        <small>يوم</small>
+      </div>
+      <button class="icon-btn" id="themeBtn" title="تبديل الإضاءة">🌙</button>
+      <button class="icon-btn" id="resetBtn" title="إعادة الإعداد">↺</button>
+      <div class="role-badge" id="roleBadge">زائر</div>
+    </div>
+  </div>
+  <nav class="top-nav" id="topNav"></nav>
+</header>
+
+<main class="layout">
+  <aside class="side-nav" id="sideNav"></aside>
+  <section class="view" id="view" aria-live="polite"></section>
+</main>
+
+<nav class="bottom-nav" id="bottomNav"></nav>
+
+<div id="toastRoot"></div>
+<div id="modalRoot"></div>
+<canvas id="confettiCanvas"></canvas>
+
+<script src="js/data/quran-data.js"></script>
+<script src="js/core/quran-utils.js"></script>
+<script src="js/core/store.js"></script>
+<script src="js/core/tracks.js"></script>
+<script src="js/core/scheduler.js"></script>
+<script src="js/core/analytics.js"></script>
+<script src="js/ui/components.js"></script>
+<script src="js/ui/charts.js"></script>
+<script src="js/roles/student.js"></script>
+<script src="js/roles/parent.js"></script>
+<script src="js/roles/teacher.js"></script>
+<script src="js/roles/director.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

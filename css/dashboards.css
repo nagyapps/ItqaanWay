@@ -1,0 +1,31 @@
+.page-title{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.page-title h2{font-size:1.35rem;font-weight:900}
+.page-title p{margin:4px 0 0;font-size:.88rem}
+.motiv-strip{
+  display:flex;gap:10px;align-items:center;background:linear-gradient(90deg,var(--amber-bg),#fff);
+  border:1px solid #FDE68A;border-radius:14px;padding:12px 16px;font-size:.88rem;font-weight:600;color:#92400E;
+}
+[data-theme="dim"] .motiv-strip{color:#FDE68A}
+.hadith{
+  font-family:var(--quran-font);font-size:1.05rem;text-align:center;color:var(--sky-700);
+  background:var(--sky-50);border-radius:14px;padding:14px;border:1px solid var(--sky-200);line-height:2;
+}
+.teacher-note{background:#FFFBEB;border:1px solid #FDE68A;border-radius:12px;padding:12px 14px;font-size:.87rem}
+.avatar{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-weight:900;background:var(--sky-100);color:var(--sky-700);flex:none}
+.row-flex{display:flex;align-items:center;gap:12px}
+.space-between{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.empty{text-align:center;padding:30px 16px;color:var(--muted)}
+.empty .big{font-size:2.4rem}
+.timeline{position:relative;padding-right:18px}
+.timeline::before{content:"";position:absolute;right:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl-item{position:relative;padding:0 22px 16px 0}
+.tl-item::before{content:"";position:absolute;right:0;top:6px;width:14px;height:14px;border-radius:50%;background:var(--sky-500);border:3px solid var(--sky-100)}
+.tl-item.done::before{background:var(--green)}
+.tl-item.missed::before{background:var(--rose)}
+.badge-num{
+  min-width:30px;height:30px;border-radius:10px;display:inline-grid;place-items:center;
+  background:var(--sky-100);color:var(--sky-700);font-weight:900;padding:0 8px;
+}
+.section-label{font-size:.8rem;font-weight:800;color:var(--muted);letter-spacing:.2px;margin:6px 0 10px;display:flex;align-items:center;gap:8px}
+.section-label::after{content:"";flex:1;height:1px;background:var(--line)}
+.footer-note{text-align:center;color:var(--muted-2);font-size:.78rem;padding:18px 0 4px}
